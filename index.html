@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div id="photo-generating">
+            <label for="photo-amount">Photo amount:</label>
+            <input type="number" id="photo-amount" name="photo-amount" min="1" max="10">
+            <button id="generate">Generate</button>
+        </div>
+
+        <div id="next-steps" class="dont-show">
+            <p>What do you want to do?</p>
+            <div class="buttons">
+                <button id="add-photo">Add new photo</button>
+                <button id="delete-photo">Delete photo</button>
+                <button id="change-photo">Change photo</button>
+                <button id="change-size">Change photo size</button>
+            </div>
+        </div>
+
+        <div id="adding-new-photo" class="dont-show">
+            <input type="url" id="image-url" name="image-url" placeholder="image url from the internet" required>
+            <button id="add-btn">add photo</button>
+        </div>
+
+        <div id="deleting-photo" class="dont-show">
+            <input type="number" id="photo-order" name="photo-order" min="1" placeholder="photo order">
+            <button id="delete-btn">delete photo</button>
+        </div>
+
+        <div id="changing-photo" class="dont-show">
+            <label for="photo-change">Order of a photo you want to change:</label> 
+            <input type="number" id="photo-change" name="photo-change" min="1"> 
+            <label for="image-url-tochange">Url of the photo you want to change to:</label> 
+            <input type="url" id="image-url-tochange" name="image-url-tochange"> 
+            <button id="change-btn">change photo</button>
+        </div>
+
+        <div id="changing-size" class="dont-show">
+            <div>
+                <label for="photo-change">Order of a photo you want to change:</label>
+                <input type="number" id="photo-size-change" name="photo-size-change" min="1">
+            </div>
+            <div>
+                <label for="width-tochangeto">Width (px):</label>
+                <input type="number" id="width-tochangeto" name="width-tochangeto">
+            </div>
+            <div>
+                <label for="height-tochange-to">Height (px):</label>
+                <input type="number" id="height-tochange-to" name="height-tochange-to">
+            </div>
+            <button id="change-size-btn">change size</button>
+        </div>
+    </form>
+
+    <div id="photos-display">
+        <!-- <img src="public/photo1.jpg" alt="">
+        <img src="public/photo2.jpg" alt="">
+        <img src="public/photo10.jpg" alt="">
+        <img src="public/photo13.jpg" alt="">
+        <img src="public/photo6.jpg" alt="">
+        <img src="public/photo5.jpg" alt=""> -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

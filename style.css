@@ -1,0 +1,135 @@
+body{
+    font-family: "Libre Baskerville";
+    background-color: #FFFDF6;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 50px;
+}
+
+#photo-generating{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+#photo-generating.dont-show{
+    display: none;
+}
+label{
+    font-size: 17px;
+    text-align: center;
+}
+input{
+    border: 1px solid #555;
+    padding: 5px;
+    font-size: 14px;
+}
+input:hover, input:focus{
+    outline: none;
+}
+
+p{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+#next-steps.dont-show{
+    display: none;
+}
+
+#adding-new-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+#image-url{
+    font-size: 12px;
+}
+#adding-new-photo.dont-show{
+    display: none;
+}
+
+#deleting-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+#photo-order{
+    width: 32%;
+}
+#deleting-photo.dont-show{
+    display: none;
+}
+
+#changing-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+#changing-photo.dont-show{
+    display: none;
+}
+
+#changing-size{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+#changing-size.dont-show{
+    display: none;
+}
+
+button{
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 4px 8px lightgrey;
+}
+
+
+#photos-display{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+img{
+    width: 270px;
+    max-height: 370px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px gray;
+}
+img:hover{
+    box-shadow: 0 7px 15px gray;
+}
